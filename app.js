@@ -13,8 +13,15 @@ function adicionarAmigo () {
     } else {
         alert('Digite um nome para adicionar');
     }
+    atualizarLista();
 }
 
 function atualizarLista () {
-    
+    let listaAmigos = document.getElementById('listaAmigos');
+    listaAmigos.innerHTML = '';
+    nomes.forEach(nomes => {
+        let itemLista = document.createElement('li');
+        itemLista.textContent = nomes;
+        listaAmigos.appendChild(itemLista);
+      });
 }
