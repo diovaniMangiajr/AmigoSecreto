@@ -6,8 +6,8 @@ function adicionarAmigo () {
     let texto = entrada.value;
 
     if (texto != "") {
-        nomes.push(texto);
-        entrada = "";
+        nomes.push(texto); //Salva o nome do amigo no array "nomes"
+        entrada.value = ''; //Limpa campo de digitar o nome
 
         console.log(nomes);
     } else {
@@ -15,3 +15,6 @@ function adicionarAmigo () {
     }
 }
 
+function atualizarLista () {
+    
+}
